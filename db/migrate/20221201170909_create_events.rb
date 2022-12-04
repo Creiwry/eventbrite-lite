@@ -6,6 +6,7 @@ class CreateEvents < ActiveRecord::Migration[7.0]
       t.datetime :start_date
       t.integer :duration
       t.integer :price
+      t.belongs_to :administrator, index: true
 
       t.timestamps
     end
