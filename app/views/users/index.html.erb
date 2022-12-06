@@ -1,0 +1,16 @@
+<h1 class="text-center" >User list Page</h1>
+
+<div class="container text-center">
+  <div class="row row-cols-4">
+    <% @users.each do |user|%>
+
+      <div>
+        <div class="card-header">By: <%= user.first_name %></div>
+        <%= puts user %>
+        <div class="card-body">
+          <h5 class="card-title"><%= user.email %></h5>
+        </div>
+      </div>
+
+    <% end %>
+  </div>
